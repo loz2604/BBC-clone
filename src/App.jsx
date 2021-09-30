@@ -1,6 +1,6 @@
 //  Recreating a website
 
-import './BBC-clone.css';
+import "./BBC-clone.css";
 import nurse from "./images/nurse.PNG";
 import twoNurses from "./images/twoNurses.PNG";
 import celeb from "./images/celeb.PNG";
@@ -9,18 +9,33 @@ import lady from "./images/lady.PNG";
 import clock from "./images/clock-logo.jpg"
 import comment from "./images/comment-icon.png"
 
-const App = () => {
+const Image1 = () => {
   return (
-    <div id="container">
-      <Container1 />
-      <Container2 />
-      <Container3 />
-      <Container4 />
-    </div>
+    <img src={nurse} alt="Nurse" />
+  );
+}
+const Image2 = () => {
+  return (
+    <img src={twoNurses} alt="Two Nurses" />
+  );
+}
+const Image3 = () => {
+  return (
+    <img src={celeb} alt="Celeb" />
+  );
+}
+const Image4 = () => {
+  return (
+    <img src={celeb2} alt="Another celeb" />
+  );
+}
+const Image5 = () => {
+  return (
+    <img src={lady} alt="Lady" />
   );
 }
 
-const Container1 = (props) => {
+const Container1 = () => {
   return (
     <div id="container1">
       <div id="image">
@@ -138,31 +153,16 @@ const Container4 = () => {
     </div>
   );
 }
+const App = () => {
+  return (
+    <div id="container">
+      <Container1 />
+      <Container2 />
+      <Container3 />
+      <Container4 />
+    </div>
+  );
+}
 
-const Image1 = (props) => {
-  return (
-    <img src={nurse} alt="Nurse" />
-  );
-}
-const Image2 = (props) => {
-  return (
-    <img src={twoNurses} alt="Two Nurses" />
-  );
-}
-const Image3 = (props) => {
-  return (
-    <img src={celeb} alt="Celeb" />
-  );
-}
-const Image4 = (props) => {
-  return (
-    <img src={celeb2} alt="Another celeb" />
-  );
-}
-const Image5 = (props) => {
-  return (
-    <img src={lady} alt="Lady" />
-  );
-}
 
 export default App;
